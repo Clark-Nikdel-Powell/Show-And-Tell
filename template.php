@@ -39,9 +39,14 @@ if (!$vars['prev_url'] || !$vars['next_url']) {
 		// Ignore core files
 		if ($fn == 'template.php' || $fn == 'index.php')
 			unset($files[$key]);
+	}
+	// Reset array keys
+	$files = array_values($files);
+
+	foreach ($files as $key => $fn) {
 
 		// Find this page
-		elseif ($fn == $filename.'.php')
+		if ($fn == $filename.'.php')
 			$this_key = $key;
 	}
 
