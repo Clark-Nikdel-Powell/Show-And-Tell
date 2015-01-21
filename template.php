@@ -6,7 +6,7 @@ $defaults = array(
 	'page_title' => ''
 ,	'prev_url'   => ''
 ,	'next_url'   => ''
-,	'bg_color'   => '#FFFFFF'
+,	'bg_color'   => '#555555'
 );
 
 $vars = array_merge($defaults, $page_settings);
